@@ -1,0 +1,146 @@
+@font-face {
+    font-family: United Italic Cond;
+    src: url(/fonts/UnitedItalicCond-Heavy.woff2) format("woff2"),url(/fonts/UnitedItalicCond-Heavy.woff) format("woff")
+}
+
+:root {
+  --color-cg-red:        #c8102e;
+  --color-cg-light-red:  #ee1236;
+  --color-cg-dark-red:   #8d4a4c;
+  --color-cg-green:      #007e33;
+  --color-cg-gray:       #868686;
+  --color-cg-dark-gray:  #333132;
+  --color-cg-font:       #333132;
+
+  font: Arial, sans-serif;
+}
+
+
+.App {
+
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: United Italic Cond,sans-serif;
+  text-transform: uppercase;
+}
+
+.main {
+  background-image: url(/workout.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.glow {
+  padding: 50px;
+  background-color: rgba(255,255,255,.4);
+}
+
+.text-red {
+  color: var(--color-cg-red);
+}
+
+.center {
+  text-align: center;
+}
+
+.cg-fab {
+  width: 48px;
+  height: 48px;
+  border-radius: 50px;
+  fill: white;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #263746;
+  box-shadow: 5px 5px 5px #999;
+}
+
+.cg-fab svg {
+  margin-top: 10px;
+}
+
+.cg-fab:hover {
+  background-color: #334a5f;
+  box-shadow: 5px 5px 10px #999;
+}
+
+.cg-button {
+  display: inline-block;
+  margin: 10px;
+  padding: 13px 40px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.5s ease;
+  border: 2px solid var(--color-cg-red);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.cg-button-primary {
+  background: var(--color-cg-red);
+}
+
+.cg-button-secondary {
+  background: #fff;
+  color: var(--color-cg-red);
+}
+
+.cg-button:hover {
+  color: #fff;
+  background: var(--color-cg-gray);
+  border: 2px solid var(--color-cg-gray);
+}
+
+input, select, textarea {
+  border: 2px solid var(--color-cg-dark-gray);
+  padding: 10px;
+  border-radius: 50px;
+  margin: 5px;
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  box-sizing: border-box;
+}
+
+textarea {
+  border-radius: 5px;
+}
+
+input:focus, select:focus, textarea:focus {
+  border: 2px solid var(--color-cg-red);
+}
+
+.chars-remaining {
+  text-shadow: 0 0 3px #333;
+  color: white;
+  width: 350px;
+  text-align: right;
+}
+
+.error {
+  border: 1px solid var(--color-cg-red);
+  background-color: rgba(255,0,0,.2);
+  padding: 10px;
+  margin: 5px;
+  color:  var(--color-cg-red);
+  display: inline-block;
+}
+
+.success {
+  border: 1px solid var(--color-cg-green);
+  background-color: rgba(0,126,51,.2);
+  padding: 10px;
+  margin: 5px;
+  color:  var(--color-cg-green);
+  display: inline-block;
+}

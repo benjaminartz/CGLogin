@@ -1,0 +1,12 @@
+.NavBar {
+  border-bottom: 3px solid #ddd;
+}
+
+.NavBar .logo {
+  margin: 10px 50px;
+  height: 42px;
+}
+
+.NavBar .auth-button {
+  float: right;
+}

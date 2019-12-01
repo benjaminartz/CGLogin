@@ -1,0 +1,37 @@
+.user-card {
+  margin: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px   1px 10px #333;
+  width: 900px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.user-card .profile-pic {
+  font-size: 0;
+  box-sizing: content-box;
+}
+
+.user-card .profile-info {
+  padding: 30px;
+}
+
+.user-card .profile-info .name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.user-card .profile-info .dance {
+  color: #555;
+  font-style: italic;
+}
+
+.user-card .profile-info .email {
+  margin: 10px 0;
+}
+
+.user-card .profile-info .comments {
+  margin: 10px 0;
+}
