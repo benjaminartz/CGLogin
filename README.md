@@ -17,3 +17,8 @@ From the project root, run this command to download the project dependencies:
 From the project root, run this command to start the project:  
 `yarn dev`  
 Your browser should open automatically to the project
+
+## Test
+From the project root, run this command to start the project:  
+`npm test`  
+You should see full coverage with all tests passing
