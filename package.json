@@ -3,17 +3,30 @@
   "version": "1.0.0",
   "scripts": {
     "client": "cd client && yarn start",
-    "server": "nodemon --ignore db.json server.js",
-    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+    "server": "nodemon --ignore dev-db.json server.js",
+    "dev": "cross-env NODE_ENV=dev concurrently --kill-others-on-fail \"yarn server\" \"yarn client\"",
+    "test": "cross-env NODE_ENV=test jest --coverage"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
     "express-session": "^1.17.0",
+    "g": "^2.0.1",
     "lowdb": "^1.0.0",
-    "simple-encryptor": "^3.0.0"
+    "simple-encryptor": "^3.0.0",
+    "yarn": "^1.19.2"
   },
   "devDependencies": {
-    "concurrently": "^5.0.0"
+    "concurrently": "^5.0.0",
+    "cross-env": "^6.0.3",
+    "jest": "^24.9.0",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "/node_modules/",
+      "/client/"
+    ]
   }
 }
