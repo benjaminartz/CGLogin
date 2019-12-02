@@ -19,6 +19,6 @@ From the project root, run this command to start the project:
 Your browser should open automatically to the project
 
 ## Test
-From the project root, run this command to start the project:  
+From the project root, run this command to start the tests:  
 `npm test`  
 You should see full coverage with all tests passing
